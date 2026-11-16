@@ -1,0 +1,9 @@
+[General]
+name=/restraint/e2e/selinux-check
+description=Check that restraint's SELinux modules are loaded and tasks run as unconfined_t
+license=GPLv3+
+
+[restraint]
+entry_point=bash ./runtest.sh
+max_time=15m
+dependencies=setools-console;audit;python3

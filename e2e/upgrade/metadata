@@ -1,0 +1,8 @@
+[General]
+name=/restraint/e2e/upgrade
+description=Upgrade stock restraint in place to the fixed build, then reboot
+license=GPLv3+
+
+[restraint]
+entry_point=bash ./runtest.sh
+max_time=30m
